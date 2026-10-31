@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aurora Client
 
 Aurora is a feature-rich, high-performance Fabric client mod for Minecraft 1.21.1 designed for competitive PvP, smoothness, and visual customization.
@@ -77,3 +78,6 @@ Aurora is a feature-rich, high-performance Fabric client mod for Minecraft 1.21.
 ## License
 
 This project includes third-party libraries and modules licensed under their respective open-source terms. See the individual `LICENSE_*` files in the root directory for details.
+=======
+# AuroraClient-src
+>>>>>>> a076d4f35c43dde977211b8a4273fa3a821dac7e
