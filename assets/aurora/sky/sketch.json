@@ -1,0 +1,345 @@
+{
+ "name": "Sketch",
+ "defaults": {
+  "mode": 0,
+  "ink": "#34363d",
+  "paper": "#efe9dc",
+  "grain": 0.5,
+  "ruled": false,
+  "grid": false,
+  "lineWidth": 1,
+  "wobble": 0.3,
+  "boil": false,
+  "shading": 0.8,
+  "spacing": 7.5,
+  "strokeLen": 1,
+  "smudge": 0.15,
+  "washOn": true,
+  "washAmt": 0.35,
+  "washDay": "#8db7e8",
+  "washSunset": "#ffa66b",
+  "washNight": "#6a6fa0",
+  "cloudsOn": true,
+  "coverage": 0.5,
+  "cloudSize": 1,
+  "cloudSpeed": 0.3,
+  "highClouds": true,
+  "puffLines": 0.6,
+  "sunSize": 1,
+  "sunRays": true,
+  "moonPhase": 0.35,
+  "craters": true,
+  "starsOn": true,
+  "starAmt": 0.5,
+  "constellations": true,
+  "shooting": true,
+  "birdsOn": true,
+  "birdAmt": 0.5
+ },
+ "presets": {
+  "Pencil": {},
+  "Ballpoint": {
+   "mode": 1,
+   "ink": "#1d3a9e",
+   "paper": "#f8f8f3",
+   "ruled": true,
+   "lineWidth": 0.85,
+   "wobble": 0.15,
+   "spacing": 6.5,
+   "smudge": 0,
+   "washAmt": 0.12,
+   "grain": 0.2
+  },
+  "Charcoal": {
+   "mode": 2,
+   "ink": "#19191b",
+   "paper": "#d8d2c6",
+   "lineWidth": 2.2,
+   "spacing": 10,
+   "smudge": 0.95,
+   "shading": 1.4,
+   "washAmt": 0.12,
+   "grain": 0.9,
+   "wobble": 0.45,
+   "puffLines": 0.3
+  },
+  "Blueprint": {
+   "mode": 3,
+   "ink": "#eaf2ff",
+   "paper": "#1f4f94",
+   "grid": true,
+   "lineWidth": 0.8,
+   "wobble": 0.05,
+   "smudge": 0,
+   "shading": 0.5,
+   "washOn": false,
+   "grain": 0.25
+  }
+ },
+ "sections": [
+  {
+   "name": "Paper & ink",
+   "items": [
+    {
+     "key": "mode",
+     "type": "num",
+     "label": "Medium (pencil, pen, charcoal, blueprint)",
+     "min": 0,
+     "max": 3,
+     "step": 1
+    },
+    {
+     "key": "ink",
+     "type": "color",
+     "label": "Ink"
+    },
+    {
+     "key": "paper",
+     "type": "color",
+     "label": "Paper"
+    },
+    {
+     "key": "grain",
+     "type": "num",
+     "label": "Paper grain",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "ruled",
+     "type": "bool",
+     "label": "Ruled lines"
+    },
+    {
+     "key": "grid",
+     "type": "bool",
+     "label": "Grid paper"
+    },
+    {
+     "key": "lineWidth",
+     "type": "num",
+     "label": "Line width",
+     "min": 0.5,
+     "max": 3,
+     "step": 0.05
+    },
+    {
+     "key": "wobble",
+     "type": "num",
+     "label": "Wobble",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "boil",
+     "type": "bool",
+     "label": "Redrawn lines"
+    }
+   ]
+  },
+  {
+   "name": "Shading",
+   "items": [
+    {
+     "key": "shading",
+     "type": "num",
+     "label": "Darkness",
+     "min": 0,
+     "max": 1.5,
+     "step": 0.01
+    },
+    {
+     "key": "spacing",
+     "type": "num",
+     "label": "Hatch spacing",
+     "min": 4,
+     "max": 14,
+     "step": 0.5
+    },
+    {
+     "key": "strokeLen",
+     "type": "num",
+     "label": "Stroke length",
+     "min": 0.5,
+     "max": 2,
+     "step": 0.05
+    },
+    {
+     "key": "smudge",
+     "type": "num",
+     "label": "Smudge",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Colour wash",
+   "toggle": "washOn",
+   "items": [
+    {
+     "key": "washOn",
+     "type": "bool",
+     "label": "Colour wash"
+    },
+    {
+     "key": "washAmt",
+     "type": "num",
+     "label": "Strength",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "washDay",
+     "type": "color",
+     "label": "Day"
+    },
+    {
+     "key": "washSunset",
+     "type": "color",
+     "label": "Sunset"
+    },
+    {
+     "key": "washNight",
+     "type": "color",
+     "label": "Night"
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudsOn",
+   "items": [
+    {
+     "key": "cloudsOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "coverage",
+     "type": "num",
+     "label": "Coverage",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "cloudSize",
+     "type": "num",
+     "label": "Size",
+     "min": 0.5,
+     "max": 2,
+     "step": 0.01
+    },
+    {
+     "key": "cloudSpeed",
+     "type": "num",
+     "label": "Speed",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "highClouds",
+     "type": "bool",
+     "label": "High cloud layer"
+    },
+    {
+     "key": "puffLines",
+     "type": "num",
+     "label": "Puff lines",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Sun & moon",
+   "items": [
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Sun size",
+     "min": 0.5,
+     "max": 2,
+     "step": 0.01
+    },
+    {
+     "key": "sunRays",
+     "type": "bool",
+     "label": "Sun rays"
+    },
+    {
+     "key": "moonPhase",
+     "type": "num",
+     "label": "Moon phase",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "craters",
+     "type": "bool",
+     "label": "Moon craters"
+    }
+   ]
+  },
+  {
+   "name": "Night sky",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Stars"
+    },
+    {
+     "key": "starAmt",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "constellations",
+     "type": "bool",
+     "label": "Constellations"
+    },
+    {
+     "key": "shooting",
+     "type": "bool",
+     "label": "Shooting stars"
+    }
+   ]
+  },
+  {
+   "name": "Birds",
+   "toggle": "birdsOn",
+   "items": [
+    {
+     "key": "birdsOn",
+     "type": "bool",
+     "label": "Birds"
+    },
+    {
+     "key": "birdAmt",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "paper",
+  "night": "#6f6b63"
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "name": "Comic",
+ "defaults": {
+  "ink": "#16121c",
+  "paper": "#ffffff",
+  "lineWidth": 2.2,
+  "dotSize": 7,
+  "halftone": 75,
+  "misprint": 0,
+  "mono": false,
+  "dayTop": "#1f7bff",
+  "dayHorizon": "#8ee6ff",
+  "sunsetTop": "#e8357a",
+  "sunsetHorizon": "#ffcf3a",
+  "nightTop": "#120f46",
+  "nightHorizon": "#3d2a86",
+  "sunOn": true,
+  "sunSize": 11,
+  "rays": 16,
+  "sunColor": "#ffe600",
+  "moonColor": "#fff3b8",
+  "cloudOn": true,
+  "cloudAmount": 55,
+  "cloudSize": 55,
+  "wind": 25,
+  "cloudColor": "#ffffff",
+  "cloudShade": "#8fc9ff",
+  "starsOn": true,
+  "starDensity": 45,
+  "starColor": "#fff27a"
+ },
+ "presets": {
+  "Pop Art": {},
+  "Newsprint": {
+   "paper": "#f3e6c4",
+   "ink": "#2a2420",
+   "misprint": 55,
+   "dayTop": "#4f86c6",
+   "dayHorizon": "#a9d4e0",
+   "sunsetTop": "#c9566e",
+   "sunsetHorizon": "#e8b85a",
+   "nightTop": "#262a52",
+   "nightHorizon": "#4a3f72",
+   "sunColor": "#f0cf4a",
+   "cloudShade": "#a8c2d8",
+   "dotSize": 5,
+   "lineWidth": 1.6
+  },
+  "Manga": {
+   "mono": true,
+   "dotSize": 5,
+   "halftone": 90,
+   "lineWidth": 1.8,
+   "rays": 28
+  },
+  "Night Issue": {
+   "nightTop": "#0b0a2e",
+   "nightHorizon": "#40206e",
+   "starDensity": 70,
+   "cloudAmount": 35,
+   "cloudColor": "#6a5fb0",
+   "cloudShade": "#2a2466"
+  }
+ },
+ "sections": [
+  {
+   "name": "Ink and print",
+   "items": [
+    {
+     "key": "ink",
+     "type": "color",
+     "label": "Ink"
+    },
+    {
+     "key": "paper",
+     "type": "color",
+     "label": "Paper"
+    },
+    {
+     "key": "lineWidth",
+     "type": "num",
+     "label": "Outline width",
+     "min": 0.5,
+     "max": 5,
+     "step": 0.1
+    },
+    {
+     "key": "dotSize",
+     "type": "num",
+     "label": "Dot size",
+     "min": 3,
+     "max": 16,
+     "step": 0.5
+    },
+    {
+     "key": "halftone",
+     "type": "num",
+     "label": "Halftone",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "misprint",
+     "type": "num",
+     "label": "Misprint",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "mono",
+     "type": "bool",
+     "label": "Black and white"
+    }
+   ]
+  },
+  {
+   "name": "Sky colours",
+   "items": [
+    {
+     "key": "dayTop",
+     "type": "color",
+     "label": "Day top"
+    },
+    {
+     "key": "dayHorizon",
+     "type": "color",
+     "label": "Day horizon"
+    },
+    {
+     "key": "sunsetTop",
+     "type": "color",
+     "label": "Sunset top"
+    },
+    {
+     "key": "sunsetHorizon",
+     "type": "color",
+     "label": "Sunset horizon"
+    },
+    {
+     "key": "nightTop",
+     "type": "color",
+     "label": "Night top"
+    },
+    {
+     "key": "nightHorizon",
+     "type": "color",
+     "label": "Night horizon"
+    }
+   ]
+  },
+  {
+   "name": "Sun and moon",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun and moon"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 4,
+     "max": 24,
+     "step": 0.5
+    },
+    {
+     "key": "rays",
+     "type": "num",
+     "label": "Action lines",
+     "min": 0,
+     "max": 32,
+     "step": 1
+    },
+    {
+     "key": "sunColor",
+     "type": "color",
+     "label": "Sun"
+    },
+    {
+     "key": "moonColor",
+     "type": "color",
+     "label": "Moon"
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudOn",
+   "items": [
+    {
+     "key": "cloudOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "cloudAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudSize",
+     "type": "num",
+     "label": "Size",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "wind",
+     "type": "num",
+     "label": "Wind",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudColor",
+     "type": "color",
+     "label": "Cloud"
+    },
+    {
+     "key": "cloudShade",
+     "type": "color",
+     "label": "Shade dots"
+    }
+   ]
+  },
+  {
+   "name": "Stars",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Stars"
+    },
+    {
+     "key": "starDensity",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "starColor",
+     "type": "color",
+     "label": "Star"
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "dayHorizon",
+  "night": "nightHorizon",
+  "dusk": "sunsetHorizon"
+ }
+}

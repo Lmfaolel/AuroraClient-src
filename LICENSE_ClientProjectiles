@@ -1,0 +1,49 @@
+Client Projectiles
+==================
+
+Files: dev/quelchi/aurora/optimize/ProjectileOptimizer.java
+       dev/quelchi/aurora/mixins/BowItemMixin.java
+       dev/quelchi/aurora/mixins/EnderPearlItemMixin.java
+       dev/quelchi/aurora/mixins/EnderPearlEntityMixin.java
+       dev/quelchi/aurora/mixins/ExperienceBottleItemMixin.java
+       dev/quelchi/aurora/mixins/ExperienceBottleEntityMixin.java
+       dev/quelchi/aurora/mixins/ThrowablePotionItemMixin.java
+       dev/quelchi/aurora/mixins/PotionEntityMixin.java
+       dev/quelchi/aurora/mixins/WindChargeItemMixin.java
+       dev/quelchi/aurora/mixins/AbstractWindChargeEntityMixin.java
+       dev/quelchi/aurora/mixins/PersistentProjectileEntityMixin.java
+       dev/quelchi/aurora/mixins/PersistentProjectileEntityInvoker.java
+       parts of dev/quelchi/aurora/mixins/ClientPlayNetworkHandlerMixin.java
+       and dev/quelchi/aurora/mixins/CrossbowItemMixin.java
+
+Ported from Client Projectiles 1.0.2 for Minecraft 1.21.11 by Walksy
+(https://github.com/Walksy/ClientProjectiles,
+https://modrinth.com/mod/clientprojectiles). The port is rewritten against
+Yarn mappings and Aurora's module framework. It keeps the client-side
+prediction for ender pearls, wind charges, splash and lingering potions,
+experience bottles, bows and crossbows, the pearl and wind charge collision,
+and the deduplication of the server's spawns, sounds, world events and
+explosions. The per-projectile config screen and the EntityCulling compat
+were dropped.
+
+MIT License
+
+Copyright (c) 2025 Walksy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

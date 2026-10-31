@@ -1,0 +1,332 @@
+{
+ "name": "Holographic",
+ "defaults": {
+  "finish": 0,
+  "tint1": "#ffb3e6",
+  "tint2": "#9fe8ff",
+  "sheen": 0.5,
+  "flow": 0.4,
+  "viewShift": 1,
+  "sunOn": true,
+  "sunSize": 0.05,
+  "corona": 0.5,
+  "halo": 0.4,
+  "rainbowOn": true,
+  "rainbowStrength": 0.45,
+  "cloudsOn": true,
+  "cloudCover": 0.5,
+  "cloudEdge": 0.5,
+  "cloudTint": "#ffffff",
+  "bubblesOn": true,
+  "bubbleCount": 3,
+  "bubbleSize": 0.5,
+  "facetsOn": false,
+  "facetSize": 0.5,
+  "facetBend": 0.5,
+  "glitterOn": true,
+  "glitterAmount": 0.5,
+  "nightColor": "#5a2a9a",
+  "starAmount": 0.5,
+  "auroraOn": true,
+  "auroraStrength": 0.6,
+  "auroraHeight": 0.4
+ },
+ "presets": {
+  "Foil": {},
+  "Pearl": {
+   "finish": 1,
+   "tint1": "#f6e6ff",
+   "tint2": "#dff6ff",
+   "sheen": 0.3,
+   "halo": 0.8,
+   "cloudCover": 0.55,
+   "glitterAmount": 0.3,
+   "bubbleCount": 2,
+   "nightColor": "#3e3366"
+  },
+  "Oil Slick": {
+   "finish": 2,
+   "tint1": "#1d6a7a",
+   "tint2": "#6d2fa0",
+   "sheen": 0.8,
+   "cloudCover": 0.4,
+   "cloudEdge": 0.9,
+   "bubbleCount": 2,
+   "glitterAmount": 0.6,
+   "nightColor": "#12082a"
+  },
+  "Crystal": {
+   "facetsOn": true,
+   "tint1": "#c3b2ff",
+   "tint2": "#8ff0e4",
+   "bubblesOn": false,
+   "glitterAmount": 0.55,
+   "nightColor": "#2a1f5c"
+  },
+  "Bubble Party": {
+   "bubbleCount": 7,
+   "bubbleSize": 0.8,
+   "cloudCover": 0.3,
+   "flow": 0.55,
+   "glitterAmount": 0.7
+  }
+ },
+ "sections": [
+  {
+   "name": "Foil",
+   "items": [
+    {
+     "key": "finish",
+     "type": "num",
+     "label": "Finish (0 Foil, 1 Pearl, 2 Oil)",
+     "min": 0,
+     "max": 2,
+     "step": 1
+    },
+    {
+     "key": "tint1",
+     "type": "color",
+     "label": "Tint 1"
+    },
+    {
+     "key": "tint2",
+     "type": "color",
+     "label": "Tint 2"
+    },
+    {
+     "key": "sheen",
+     "type": "num",
+     "label": "Rainbow sheen",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "flow",
+     "type": "num",
+     "label": "Flow speed",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "viewShift",
+     "type": "num",
+     "label": "Colour sweep",
+     "min": 0,
+     "max": 2,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Sun",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Size",
+     "min": 0.02,
+     "max": 0.12,
+     "step": 0.001
+    },
+    {
+     "key": "corona",
+     "type": "num",
+     "label": "Rainbow corona",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "halo",
+     "type": "num",
+     "label": "Wide halo",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Rainbow",
+   "toggle": "rainbowOn",
+   "items": [
+    {
+     "key": "rainbowOn",
+     "type": "bool",
+     "label": "Rainbow opposite the sun"
+    },
+    {
+     "key": "rainbowStrength",
+     "type": "num",
+     "label": "Strength",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudsOn",
+   "items": [
+    {
+     "key": "cloudsOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "cloudCover",
+     "type": "num",
+     "label": "Cover",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "cloudEdge",
+     "type": "num",
+     "label": "Rainbow edges",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "cloudTint",
+     "type": "color",
+     "label": "Tint"
+    }
+   ]
+  },
+  {
+   "name": "Bubbles",
+   "toggle": "bubblesOn",
+   "items": [
+    {
+     "key": "bubblesOn",
+     "type": "bool",
+     "label": "Bubbles"
+    },
+    {
+     "key": "bubbleCount",
+     "type": "num",
+     "label": "Amount",
+     "min": 1,
+     "max": 7,
+     "step": 1
+    },
+    {
+     "key": "bubbleSize",
+     "type": "num",
+     "label": "Size",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Crystal facets",
+   "toggle": "facetsOn",
+   "items": [
+    {
+     "key": "facetsOn",
+     "type": "bool",
+     "label": "Facets"
+    },
+    {
+     "key": "facetSize",
+     "type": "num",
+     "label": "Facet size",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "facetBend",
+     "type": "num",
+     "label": "Bend",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Glitter",
+   "toggle": "glitterOn",
+   "items": [
+    {
+     "key": "glitterOn",
+     "type": "bool",
+     "label": "Glitter"
+    },
+    {
+     "key": "glitterAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Night",
+   "items": [
+    {
+     "key": "nightColor",
+     "type": "color",
+     "label": "Night sky"
+    },
+    {
+     "key": "starAmount",
+     "type": "num",
+     "label": "Stars",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  },
+  {
+   "name": "Aurora",
+   "toggle": "auroraOn",
+   "items": [
+    {
+     "key": "auroraOn",
+     "type": "bool",
+     "label": "Aurora at night"
+    },
+    {
+     "key": "auroraStrength",
+     "type": "num",
+     "label": "Strength",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    },
+    {
+     "key": "auroraHeight",
+     "type": "num",
+     "label": "Height",
+     "min": 0,
+     "max": 1,
+     "step": 0.01
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "tint2",
+  "night": "nightColor",
+  "dusk": "#ffa49a"
+ }
+}

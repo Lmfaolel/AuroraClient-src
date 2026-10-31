@@ -1,0 +1,412 @@
+{
+ "name": "Paper Cutout",
+ "defaults": {
+  "bands": 6,
+  "waveHeight": 45,
+  "waveCount": 6,
+  "sheetVar": 35,
+  "grain": 35,
+  "fibres": 25,
+  "fuzz": 0,
+  "shadow": 60,
+  "shadowSoft": 45,
+  "edgeLight": 45,
+  "dayTop": "#3d7be0",
+  "dayHorizon": "#a6d8ff",
+  "duskHorizon": "#ff8a5c",
+  "nightTop": "#0d1433",
+  "nightHorizon": "#2a3a6e",
+  "sunOn": true,
+  "sunSize": 7,
+  "rays": 12,
+  "rayLength": 55,
+  "sunCore": "#ffd23f",
+  "sunRay": "#ff9f1c",
+  "moonOn": true,
+  "moonSize": 6,
+  "moonPhase": 30,
+  "moonColor": "#f4efe1",
+  "cloudOn": true,
+  "cloudLayers": 3,
+  "cloudAmount": 60,
+  "cloudSize": 50,
+  "wind": 30,
+  "cloudFront": "#ffffff",
+  "cloudBack": "#cddcf0",
+  "starsOn": true,
+  "paperStars": false,
+  "starDensity": 40,
+  "starColor": "#ffe08a",
+  "stringsOn": false,
+  "stringColor": "#5b4a3a"
+ },
+ "presets": {
+  "Pop-up Book": {},
+  "Sunset Diorama": {
+   "bands": 7,
+   "dayTop": "#5b4bb8",
+   "dayHorizon": "#ffb36b",
+   "duskHorizon": "#ff6a3d",
+   "sunCore": "#ffd34d",
+   "sunRay": "#ff6f3c",
+   "cloudFront": "#ffe1c4",
+   "cloudBack": "#f0a3b4",
+   "stringsOn": true,
+   "waveHeight": 55,
+   "rays": 16,
+   "rayLength": 45
+  },
+  "Nursery Mobile": {
+   "paperStars": true,
+   "stringsOn": true,
+   "starDensity": 35,
+   "nightTop": "#1d2a5a",
+   "nightHorizon": "#46609e",
+   "starColor": "#ffd54a",
+   "moonPhase": 22,
+   "moonSize": 8,
+   "moonColor": "#fff4cc",
+   "cloudAmount": 35,
+   "cloudFront": "#e9eefc",
+   "cloudBack": "#aab8e0",
+   "stringColor": "#b9a98c",
+   "sheetVar": 25,
+   "waveHeight": 35
+  },
+  "Felt": {
+   "grain": 95,
+   "fibres": 40,
+   "fuzz": 75,
+   "edgeLight": 0,
+   "shadowSoft": 85,
+   "shadow": 45,
+   "dayTop": "#5f86b8",
+   "dayHorizon": "#a9c6d8",
+   "duskHorizon": "#e08a6a",
+   "nightTop": "#1c2238",
+   "nightHorizon": "#3a4466",
+   "cloudFront": "#f1ece2",
+   "cloudBack": "#cfd6dc",
+   "sunCore": "#f2c14e",
+   "sunRay": "#e8913a",
+   "waveHeight": 30,
+   "sheetVar": 20,
+   "cloudLayers": 2
+  },
+  "Midnight Card": {
+   "starDensity": 75,
+   "nightTop": "#06081a",
+   "nightHorizon": "#1a2244",
+   "starColor": "#fff2c4",
+   "cloudAmount": 30,
+   "cloudFront": "#aab4d4",
+   "cloudBack": "#7682a8",
+   "moonPhase": 70,
+   "sheetVar": 15,
+   "edgeLight": 30,
+   "bands": 5
+  }
+ },
+ "sections": [
+  {
+   "name": "Paper",
+   "items": [
+    {
+     "key": "bands",
+     "type": "num",
+     "label": "Sky layers",
+     "min": 3,
+     "max": 8,
+     "step": 1
+    },
+    {
+     "key": "waveHeight",
+     "type": "num",
+     "label": "Edge waviness",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "waveCount",
+     "type": "num",
+     "label": "Waves per turn",
+     "min": 2,
+     "max": 14,
+     "step": 1
+    },
+    {
+     "key": "sheetVar",
+     "type": "num",
+     "label": "Sheet colour variation",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "grain",
+     "type": "num",
+     "label": "Paper grain",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "fibres",
+     "type": "num",
+     "label": "Fibres",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "fuzz",
+     "type": "num",
+     "label": "Fuzzy edges",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Shadows and edges",
+   "items": [
+    {
+     "key": "shadow",
+     "type": "num",
+     "label": "Shadow strength",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "shadowSoft",
+     "type": "num",
+     "label": "Shadow softness",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "edgeLight",
+     "type": "num",
+     "label": "Cut edge highlight",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Sky colours",
+   "items": [
+    {
+     "key": "dayTop",
+     "type": "color",
+     "label": "Day top"
+    },
+    {
+     "key": "dayHorizon",
+     "type": "color",
+     "label": "Day horizon"
+    },
+    {
+     "key": "duskHorizon",
+     "type": "color",
+     "label": "Sunset"
+    },
+    {
+     "key": "nightTop",
+     "type": "color",
+     "label": "Night top"
+    },
+    {
+     "key": "nightHorizon",
+     "type": "color",
+     "label": "Night horizon"
+    }
+   ]
+  },
+  {
+   "name": "Sun",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 3,
+     "max": 16,
+     "step": 0.5
+    },
+    {
+     "key": "rays",
+     "type": "num",
+     "label": "Rays",
+     "min": 0,
+     "max": 24,
+     "step": 1
+    },
+    {
+     "key": "rayLength",
+     "type": "num",
+     "label": "Ray length",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "sunCore",
+     "type": "color",
+     "label": "Sun paper"
+    },
+    {
+     "key": "sunRay",
+     "type": "color",
+     "label": "Ray paper"
+    }
+   ]
+  },
+  {
+   "name": "Moon",
+   "toggle": "moonOn",
+   "items": [
+    {
+     "key": "moonOn",
+     "type": "bool",
+     "label": "Moon"
+    },
+    {
+     "key": "moonSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 2,
+     "max": 14,
+     "step": 0.5
+    },
+    {
+     "key": "moonPhase",
+     "type": "num",
+     "label": "Phase (thin to full)",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "moonColor",
+     "type": "color",
+     "label": "Moon paper"
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudOn",
+   "items": [
+    {
+     "key": "cloudOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "cloudLayers",
+     "type": "num",
+     "label": "Layers",
+     "min": 1,
+     "max": 3,
+     "step": 1
+    },
+    {
+     "key": "cloudAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudSize",
+     "type": "num",
+     "label": "Size",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "wind",
+     "type": "num",
+     "label": "Wind",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudFront",
+     "type": "color",
+     "label": "Near clouds"
+    },
+    {
+     "key": "cloudBack",
+     "type": "color",
+     "label": "Far clouds"
+    }
+   ]
+  },
+  {
+   "name": "Stars",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Stars"
+    },
+    {
+     "key": "paperStars",
+     "type": "bool",
+     "label": "Paper stars (off: punched holes)"
+    },
+    {
+     "key": "starDensity",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "starColor",
+     "type": "color",
+     "label": "Star light"
+    }
+   ]
+  },
+  {
+   "name": "Strings",
+   "toggle": "stringsOn",
+   "items": [
+    {
+     "key": "stringsOn",
+     "type": "bool",
+     "label": "Hang sun, moon and stars on strings"
+    },
+    {
+     "key": "stringColor",
+     "type": "color",
+     "label": "String"
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "dayHorizon",
+  "night": "nightHorizon",
+  "dusk": "duskHorizon"
+ }
+}

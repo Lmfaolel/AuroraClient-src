@@ -1,0 +1,15 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "aurora:sora-600.ttf",
+      "size": 7.5,
+      "oversample": 4.00,
+      "shift": [0.0, -0.5000]
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:default"
+    }
+  ]
+}

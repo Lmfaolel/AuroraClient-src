@@ -1,0 +1,14 @@
+{
+  "features": [
+    {
+      "tag": "New",
+      "title": "Pack Mixer",
+      "text": "Take single textures from any pack in your folder, like anchors, crystals, totems, pearls and armour sets, and save them as one pack with a coloured name. Open it from Options, Resource Packs."
+    },
+    {
+      "tag": "Improved",
+      "title": "Pack previews",
+      "text": "Hovering a pack shows anchors, glowstone and obsidian as whole blocks, and the incompatible version warnings are gone."
+    }
+  ]
+}

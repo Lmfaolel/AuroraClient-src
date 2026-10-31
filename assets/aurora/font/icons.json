@@ -1,0 +1,226 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+        "\ue001": 1
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue000"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_owner.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue002"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_staff.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue003"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_media.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue004"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_partner.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue005"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_admin.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue006"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_bugtester.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        ""
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_manager.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue008"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue010"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_owner_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue011"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_staff_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue012"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_media_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue013"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_partner_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue014"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_admin_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue015"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_bugtester_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue016"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:font/badge_manager_plus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue017"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/vanilla.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/sword.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/axe.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/pot.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/nethop.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/smp.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/uhc.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "aurora:mctiers/mace.png",
+      "ascent": 8,
+      "height": 8,
+      "chars": [
+        "\ue7a8"
+      ]
+    }
+  ]
+}

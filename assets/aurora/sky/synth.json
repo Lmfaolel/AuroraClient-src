@@ -1,0 +1,390 @@
+{
+ "name": "Synthwave",
+ "defaults": {
+  "dayTop": "#4b3bbd",
+  "dayHorizon": "#ff8fc1",
+  "duskHorizon": "#ff4f8b",
+  "nightTop": "#0a0420",
+  "nightLock": 0,
+  "horizonGlow": 55,
+  "motion": 35,
+  "sunOn": true,
+  "sunRing": false,
+  "sunSize": 18,
+  "stripes": 7,
+  "sunTop": "#ffe066",
+  "sunBottom": "#ff2f8f",
+  "planetOn": true,
+  "planetSize": 8,
+  "planetA": "#7b5cff",
+  "planetRings": true,
+  "planetWire": false,
+  "mtnOn": true,
+  "mtnHeight": 13,
+  "mtnWire": true,
+  "mtnLine": "#ff3fb4",
+  "cloudOn": true,
+  "cloudPuffy": false,
+  "cloudAmount": 40,
+  "cloudColor": "#3a1660",
+  "cloudRim": "#ff9a5a",
+  "starsOn": true,
+  "starDensity": 45,
+  "meteors": 4,
+  "domeOn": false,
+  "domeLines": 24,
+  "domeColor": "#22e3ff",
+  "pulses": 60,
+  "pulseColor": "#ff3cf0",
+  "dataRain": 40,
+  "crtOn": false,
+  "scanlines": 40
+ },
+ "presets": {
+  "Sunset": {},
+  "Cyber Grid": {
+   "nightLock": 85,
+   "dayTop": "#06142e",
+   "dayHorizon": "#0b2e4a",
+   "duskHorizon": "#1a3b6b",
+   "nightTop": "#000208",
+   "horizonGlow": 45,
+   "sunRing": true,
+   "sunSize": 14,
+   "sunTop": "#22e3ff",
+   "sunBottom": "#ffffff",
+   "planetWire": true,
+   "planetA": "#22e3ff",
+   "planetSize": 10,
+   "mtnLine": "#22e3ff",
+   "mtnHeight": 10,
+   "cloudOn": false,
+   "domeOn": true,
+   "meteors": 2,
+   "starDensity": 25
+  },
+  "Vaporwave": {
+   "dayTop": "#b9a7ff",
+   "dayHorizon": "#ffc6ec",
+   "duskHorizon": "#ffb3a7",
+   "nightTop": "#1b1640",
+   "horizonGlow": 35,
+   "sunTop": "#fff3a8",
+   "sunBottom": "#ff9fe5",
+   "stripes": 5,
+   "mtnLine": "#6ff0ff",
+   "mtnHeight": 10,
+   "cloudPuffy": true,
+   "cloudAmount": 45,
+   "cloudColor": "#ffe3f6",
+   "cloudRim": "#9f8cff",
+   "planetA": "#9fe8ff",
+   "meteors": 2
+  },
+  "Outrun": {
+   "nightLock": 90,
+   "dayTop": "#1a0b4a",
+   "dayHorizon": "#5a1060",
+   "duskHorizon": "#ff2bd6",
+   "nightTop": "#05010f",
+   "sunSize": 24,
+   "sunTop": "#ffd23d",
+   "sunBottom": "#ff2bd6",
+   "stripes": 9,
+   "mtnLine": "#45e0ff",
+   "mtnHeight": 15,
+   "cloudAmount": 20,
+   "cloudColor": "#1a0630",
+   "meteors": 10,
+   "starDensity": 70,
+   "crtOn": true,
+   "scanlines": 45
+  }
+ },
+ "sections": [
+  {
+   "name": "Sky",
+   "items": [
+    {
+     "key": "dayTop",
+     "type": "color",
+     "label": "Day top"
+    },
+    {
+     "key": "dayHorizon",
+     "type": "color",
+     "label": "Day horizon"
+    },
+    {
+     "key": "duskHorizon",
+     "type": "color",
+     "label": "Sunset horizon"
+    },
+    {
+     "key": "nightTop",
+     "type": "color",
+     "label": "Night"
+    },
+    {
+     "key": "nightLock",
+     "type": "num",
+     "label": "Always night",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "horizonGlow",
+     "type": "num",
+     "label": "Horizon glow",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "motion",
+     "type": "num",
+     "label": "Motion speed",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Sun",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun"
+    },
+    {
+     "key": "sunRing",
+     "type": "bool",
+     "label": "Ring sun"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 4,
+     "max": 40,
+     "step": 0.5
+    },
+    {
+     "key": "stripes",
+     "type": "num",
+     "label": "Stripes",
+     "min": 0,
+     "max": 16,
+     "step": 1
+    },
+    {
+     "key": "sunTop",
+     "type": "color",
+     "label": "Top colour"
+    },
+    {
+     "key": "sunBottom",
+     "type": "color",
+     "label": "Bottom colour"
+    }
+   ]
+  },
+  {
+   "name": "Night planet",
+   "toggle": "planetOn",
+   "items": [
+    {
+     "key": "planetOn",
+     "type": "bool",
+     "label": "Planet"
+    },
+    {
+     "key": "planetSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 2,
+     "max": 24,
+     "step": 0.5
+    },
+    {
+     "key": "planetA",
+     "type": "color",
+     "label": "Colour"
+    },
+    {
+     "key": "planetRings",
+     "type": "bool",
+     "label": "Rings"
+    },
+    {
+     "key": "planetWire",
+     "type": "bool",
+     "label": "Wire globe"
+    }
+   ]
+  },
+  {
+   "name": "Mountains",
+   "toggle": "mtnOn",
+   "items": [
+    {
+     "key": "mtnOn",
+     "type": "bool",
+     "label": "Mountains"
+    },
+    {
+     "key": "mtnHeight",
+     "type": "num",
+     "label": "Height (degrees)",
+     "min": 3,
+     "max": 25,
+     "step": 0.5
+    },
+    {
+     "key": "mtnWire",
+     "type": "bool",
+     "label": "Wireframe"
+    },
+    {
+     "key": "mtnLine",
+     "type": "color",
+     "label": "Line colour"
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudOn",
+   "items": [
+    {
+     "key": "cloudOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "cloudPuffy",
+     "type": "bool",
+     "label": "Puffy (cel shaded)"
+    },
+    {
+     "key": "cloudAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudColor",
+     "type": "color",
+     "label": "Colour"
+    },
+    {
+     "key": "cloudRim",
+     "type": "color",
+     "label": "Edge light"
+    }
+   ]
+  },
+  {
+   "name": "Stars",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Stars"
+    },
+    {
+     "key": "starDensity",
+     "type": "num",
+     "label": "Density",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "meteors",
+     "type": "num",
+     "label": "Shooting stars per minute",
+     "min": 0,
+     "max": 20,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Grid dome",
+   "toggle": "domeOn",
+   "items": [
+    {
+     "key": "domeOn",
+     "type": "bool",
+     "label": "Grid dome"
+    },
+    {
+     "key": "domeLines",
+     "type": "num",
+     "label": "Lines",
+     "min": 6,
+     "max": 48,
+     "step": 1
+    },
+    {
+     "key": "domeColor",
+     "type": "color",
+     "label": "Wire colour"
+    },
+    {
+     "key": "pulses",
+     "type": "num",
+     "label": "Pulses",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "pulseColor",
+     "type": "color",
+     "label": "Pulse colour"
+    },
+    {
+     "key": "dataRain",
+     "type": "num",
+     "label": "Data rain",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Retro screen",
+   "toggle": "crtOn",
+   "items": [
+    {
+     "key": "crtOn",
+     "type": "bool",
+     "label": "Retro screen"
+    },
+    {
+     "key": "scanlines",
+     "type": "num",
+     "label": "Scanlines",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "dayHorizon",
+  "night": "nightTop",
+  "dusk": "duskHorizon"
+ }
+}

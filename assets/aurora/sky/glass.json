@@ -1,0 +1,263 @@
+{
+ "name": "Stained Glass",
+ "defaults": {
+  "paneSize": 6,
+  "lead": 2.4,
+  "leadColor": "#17130f",
+  "saturation": 110,
+  "variation": 45,
+  "texture": 45,
+  "glow": 60,
+  "dayTop": "#1c3fae",
+  "dayHorizon": "#4fa6dc",
+  "sunsetTop": "#6e2385",
+  "sunsetHorizon": "#ff7b22",
+  "nightTop": "#080c34",
+  "nightHorizon": "#1f2260",
+  "sunOn": true,
+  "sunSize": 14,
+  "petals": 8,
+  "sunColor": "#ffc83a",
+  "sunAccent": "#e0401f",
+  "moonColor": "#d9e2ff",
+  "cloudOn": true,
+  "cloudAmount": 40,
+  "wind": 15,
+  "cloudColor": "#efece2",
+  "starsOn": true,
+  "starDensity": 45,
+  "starColor": "#fff1c2"
+ },
+ "presets": {
+  "Cathedral": {},
+  "Tiffany": {
+   "dayTop": "#2f6b4f",
+   "dayHorizon": "#b8c96a",
+   "sunsetTop": "#6b4a2a",
+   "sunsetHorizon": "#f0a03a",
+   "nightTop": "#0e2420",
+   "nightHorizon": "#2a4a3a",
+   "sunColor": "#f2d27a",
+   "sunAccent": "#c8702a",
+   "cloudColor": "#f1ead2",
+   "texture": 85,
+   "variation": 60,
+   "saturation": 85,
+   "paneSize": 7.5
+  },
+  "Rose Chapel": {
+   "sunsetTop": "#4a1f7a",
+   "sunsetHorizon": "#ff5a6e",
+   "sunAccent": "#8a2bd0",
+   "glow": 85,
+   "petals": 12,
+   "sunSize": 18
+  },
+  "Midnight Glass": {
+   "nightTop": "#050828",
+   "nightHorizon": "#18205a",
+   "starDensity": 75,
+   "cloudAmount": 25,
+   "paneSize": 5,
+   "cloudColor": "#9aa6d0"
+  }
+ },
+ "sections": [
+  {
+   "name": "Glass",
+   "items": [
+    {
+     "key": "paneSize",
+     "type": "num",
+     "label": "Pane size (degrees)",
+     "min": 2,
+     "max": 14,
+     "step": 0.5
+    },
+    {
+     "key": "lead",
+     "type": "num",
+     "label": "Lead width",
+     "min": 0.5,
+     "max": 6,
+     "step": 0.1
+    },
+    {
+     "key": "leadColor",
+     "type": "color",
+     "label": "Lead"
+    },
+    {
+     "key": "saturation",
+     "type": "num",
+     "label": "Colour strength",
+     "min": 0,
+     "max": 150,
+     "step": 1
+    },
+    {
+     "key": "variation",
+     "type": "num",
+     "label": "Pane variation",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "texture",
+     "type": "num",
+     "label": "Glass texture",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "glow",
+     "type": "num",
+     "label": "Light through the glass",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Sky colours",
+   "items": [
+    {
+     "key": "dayTop",
+     "type": "color",
+     "label": "Day top"
+    },
+    {
+     "key": "dayHorizon",
+     "type": "color",
+     "label": "Day horizon"
+    },
+    {
+     "key": "sunsetTop",
+     "type": "color",
+     "label": "Sunset top"
+    },
+    {
+     "key": "sunsetHorizon",
+     "type": "color",
+     "label": "Sunset horizon"
+    },
+    {
+     "key": "nightTop",
+     "type": "color",
+     "label": "Night top"
+    },
+    {
+     "key": "nightHorizon",
+     "type": "color",
+     "label": "Night horizon"
+    }
+   ]
+  },
+  {
+   "name": "Rose window sun",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun and moon"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 6,
+     "max": 30,
+     "step": 0.5
+    },
+    {
+     "key": "petals",
+     "type": "num",
+     "label": "Petals",
+     "min": 5,
+     "max": 16,
+     "step": 1
+    },
+    {
+     "key": "sunColor",
+     "type": "color",
+     "label": "Sun glass"
+    },
+    {
+     "key": "sunAccent",
+     "type": "color",
+     "label": "Petal glass"
+    },
+    {
+     "key": "moonColor",
+     "type": "color",
+     "label": "Moon glass"
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudOn",
+   "items": [
+    {
+     "key": "cloudOn",
+     "type": "bool",
+     "label": "Cloud panes"
+    },
+    {
+     "key": "cloudAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "wind",
+     "type": "num",
+     "label": "Wind",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudColor",
+     "type": "color",
+     "label": "Cloud glass"
+    }
+   ]
+  },
+  {
+   "name": "Stars",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Starlight"
+    },
+    {
+     "key": "starDensity",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "starColor",
+     "type": "color",
+     "label": "Star"
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "dayHorizon",
+  "night": "nightHorizon",
+  "dusk": "sunsetHorizon"
+ }
+}

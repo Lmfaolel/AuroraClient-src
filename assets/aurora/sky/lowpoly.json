@@ -1,0 +1,232 @@
+{
+ "name": "Low Poly",
+ "defaults": {
+  "facetSize": 6,
+  "jitter": 70,
+  "shading": 45,
+  "edges": 0,
+  "edgeColor": "#ffffff",
+  "dayTop": "#2d6fd8",
+  "dayHorizon": "#a8dcf0",
+  "sunsetTop": "#5b3a9a",
+  "sunsetHorizon": "#ff9a5a",
+  "nightTop": "#0b1030",
+  "nightHorizon": "#283a74",
+  "sunOn": true,
+  "sunSize": 10,
+  "sides": 8,
+  "sunColor": "#ffd34a",
+  "moonColor": "#dfe6ff",
+  "cloudOn": true,
+  "cloudAmount": 45,
+  "wind": 20,
+  "cloudColor": "#ffffff",
+  "cloudShade": "#b6c6e6",
+  "starsOn": true,
+  "starDensity": 45
+ },
+ "presets": {
+  "Low Poly": {},
+  "Crystal Dawn": {
+   "sunsetTop": "#6a4ab8",
+   "sunsetHorizon": "#ff8fb0",
+   "edges": 35,
+   "shading": 60,
+   "cloudShade": "#d9a8d0"
+  },
+  "Mint": {
+   "dayTop": "#5fc9b0",
+   "dayHorizon": "#ffe0c2",
+   "sunColor": "#ffb27a",
+   "facetSize": 9,
+   "shading": 30,
+   "cloudShade": "#c8e8dc",
+   "jitter": 50
+  },
+  "Wire Night": {
+   "edges": 55,
+   "edgeColor": "#7fb2ff",
+   "nightTop": "#050a22",
+   "nightHorizon": "#1a2a60",
+   "starDensity": 70,
+   "cloudAmount": 25
+  }
+ },
+ "sections": [
+  {
+   "name": "Facets",
+   "items": [
+    {
+     "key": "facetSize",
+     "type": "num",
+     "label": "Facet size (degrees)",
+     "min": 2,
+     "max": 14,
+     "step": 0.5
+    },
+    {
+     "key": "jitter",
+     "type": "num",
+     "label": "Irregular",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "shading",
+     "type": "num",
+     "label": "Facet shading",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "edges",
+     "type": "num",
+     "label": "Edge lines",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "edgeColor",
+     "type": "color",
+     "label": "Edge colour"
+    }
+   ]
+  },
+  {
+   "name": "Sky colours",
+   "items": [
+    {
+     "key": "dayTop",
+     "type": "color",
+     "label": "Day top"
+    },
+    {
+     "key": "dayHorizon",
+     "type": "color",
+     "label": "Day horizon"
+    },
+    {
+     "key": "sunsetTop",
+     "type": "color",
+     "label": "Sunset top"
+    },
+    {
+     "key": "sunsetHorizon",
+     "type": "color",
+     "label": "Sunset horizon"
+    },
+    {
+     "key": "nightTop",
+     "type": "color",
+     "label": "Night top"
+    },
+    {
+     "key": "nightHorizon",
+     "type": "color",
+     "label": "Night horizon"
+    }
+   ]
+  },
+  {
+   "name": "Sun and moon",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun and moon"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Size (degrees)",
+     "min": 4,
+     "max": 24,
+     "step": 0.5
+    },
+    {
+     "key": "sides",
+     "type": "num",
+     "label": "Sides",
+     "min": 5,
+     "max": 12,
+     "step": 1
+    },
+    {
+     "key": "sunColor",
+     "type": "color",
+     "label": "Sun"
+    },
+    {
+     "key": "moonColor",
+     "type": "color",
+     "label": "Moon"
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudOn",
+   "items": [
+    {
+     "key": "cloudOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "cloudAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "wind",
+     "type": "num",
+     "label": "Wind",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudColor",
+     "type": "color",
+     "label": "Lit"
+    },
+    {
+     "key": "cloudShade",
+     "type": "color",
+     "label": "Shade"
+    }
+   ]
+  },
+  {
+   "name": "Stars",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Stars"
+    },
+    {
+     "key": "starDensity",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "dayHorizon",
+  "night": "nightHorizon",
+  "dusk": "sunsetHorizon"
+ }
+}

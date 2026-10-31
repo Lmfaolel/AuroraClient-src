@@ -1,0 +1,38 @@
+MIT License
+
+Copyright (c) 2025 ReStudio By RedxAx
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+NOTE (Aurora)
+
+Aurora's liquid glass is a port of ReGlass (https://github.com/RedxAx/ReGlass,
+branch 26.1). The signed distance field, the refraction and dispersion model,
+the Fresnel and glare terms, the smooth union between panes and the separable
+gaussian blur all come from its shaders and are reproduced in
+assets/aurora/shaders/. The Java side (dev.quelchi.aurora.glass) follows the same
+design: panes are submitted as special GUI elements and composited in one pass
+in place of Minecraft's menu blur.
+
+Aurora's copy is trimmed to what this client uses and diverges where it had to:
+no config screen or its animated defaults, no rim light, pixelation or debug
+step, no glare convergence uniforms, panes are converted to GUI space with the
+live matrix so they survive a scaled screen, the scissor is mirrored rather than
+read, the blur runs at half resolution, and the framebuffer is copied before the
+pass reads it. None of ReGlass's vanilla screen redesigns are ported.

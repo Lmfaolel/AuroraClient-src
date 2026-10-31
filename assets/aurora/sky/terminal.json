@@ -1,0 +1,316 @@
+{
+ "name": "Terminal",
+ "defaults": {
+  "phosphor": "#33ff66",
+  "background": "#030b05",
+  "accent": "#d8ffe0",
+  "fullColour": false,
+  "charset": 0,
+  "cellSize": 12,
+  "brightness": 100,
+  "skyFill": 60,
+  "crtOn": true,
+  "glow": 50,
+  "scanlines": 45,
+  "flicker": 25,
+  "vignette": 40,
+  "sunOn": true,
+  "sunSize": 12,
+  "sunRays": true,
+  "moonPhase": 35,
+  "cloudOn": true,
+  "cover": 45,
+  "cloudScale": 45,
+  "wind": 30,
+  "starsOn": true,
+  "starDensity": 50,
+  "twinkle": 50,
+  "meteors": 5,
+  "rainOn": false,
+  "rainAmount": 35,
+  "rainSpeed": 40,
+  "rainColor": "#33ff66"
+ },
+ "presets": {
+  "Green Phosphor": {},
+  "Amber Monitor": {
+   "phosphor": "#ffb000",
+   "background": "#120a02",
+   "accent": "#fff1c9",
+   "charset": 1,
+   "rainColor": "#ffb000",
+   "glow": 60
+  },
+  "Mainframe": {
+   "phosphor": "#2bff6a",
+   "background": "#000000",
+   "accent": "#eafff0",
+   "charset": 2,
+   "rainOn": true,
+   "rainAmount": 55,
+   "rainColor": "#2bff6a",
+   "cover": 25,
+   "skyFill": 40,
+   "meteors": 6
+  },
+  "ANSI Colour": {
+   "fullColour": true,
+   "background": "#05060c",
+   "phosphor": "#e8eef8",
+   "accent": "#ffff55",
+   "glow": 35,
+   "scanlines": 25,
+   "flicker": 0,
+   "rainColor": "#ff55ff"
+  },
+  "Teletype": {
+   "background": "#e9e3d3",
+   "phosphor": "#24221e",
+   "accent": "#a3261b",
+   "crtOn": false,
+   "cellSize": 11,
+   "skyFill": 70,
+   "rainColor": "#24221e"
+  }
+ },
+ "sections": [
+  {
+   "name": "Screen",
+   "items": [
+    {
+     "key": "phosphor",
+     "type": "color",
+     "label": "Text colour"
+    },
+    {
+     "key": "background",
+     "type": "color",
+     "label": "Screen colour"
+    },
+    {
+     "key": "accent",
+     "type": "color",
+     "label": "Highlight"
+    },
+    {
+     "key": "fullColour",
+     "type": "bool",
+     "label": "Full colour (16-colour palette)"
+    },
+    {
+     "key": "charset",
+     "type": "num",
+     "label": "Characters: ASCII, Blocks, Binary",
+     "min": 0,
+     "max": 2,
+     "step": 1
+    },
+    {
+     "key": "cellSize",
+     "type": "num",
+     "label": "Character size (px)",
+     "min": 6,
+     "max": 28,
+     "step": 1
+    },
+    {
+     "key": "brightness",
+     "type": "num",
+     "label": "Brightness",
+     "min": 50,
+     "max": 150,
+     "step": 1
+    },
+    {
+     "key": "skyFill",
+     "type": "num",
+     "label": "Sky fill",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "CRT",
+   "toggle": "crtOn",
+   "items": [
+    {
+     "key": "crtOn",
+     "type": "bool",
+     "label": "CRT"
+    },
+    {
+     "key": "glow",
+     "type": "num",
+     "label": "Phosphor glow",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "scanlines",
+     "type": "num",
+     "label": "Scanlines",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "flicker",
+     "type": "num",
+     "label": "Flicker",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "vignette",
+     "type": "num",
+     "label": "Vignette",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Sun & moon",
+   "toggle": "sunOn",
+   "items": [
+    {
+     "key": "sunOn",
+     "type": "bool",
+     "label": "Sun and moon"
+    },
+    {
+     "key": "sunSize",
+     "type": "num",
+     "label": "Sun size (degrees)",
+     "min": 4,
+     "max": 30,
+     "step": 0.5
+    },
+    {
+     "key": "sunRays",
+     "type": "bool",
+     "label": "Rays"
+    },
+    {
+     "key": "moonPhase",
+     "type": "num",
+     "label": "Moon phase",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Clouds",
+   "toggle": "cloudOn",
+   "items": [
+    {
+     "key": "cloudOn",
+     "type": "bool",
+     "label": "Clouds"
+    },
+    {
+     "key": "cover",
+     "type": "num",
+     "label": "Coverage",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "cloudScale",
+     "type": "num",
+     "label": "Size",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "wind",
+     "type": "num",
+     "label": "Wind",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Stars",
+   "toggle": "starsOn",
+   "items": [
+    {
+     "key": "starsOn",
+     "type": "bool",
+     "label": "Stars"
+    },
+    {
+     "key": "starDensity",
+     "type": "num",
+     "label": "Density",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "twinkle",
+     "type": "num",
+     "label": "Twinkle",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "meteors",
+     "type": "num",
+     "label": "Shooting stars per minute",
+     "min": 0,
+     "max": 30,
+     "step": 1
+    }
+   ]
+  },
+  {
+   "name": "Data rain",
+   "toggle": "rainOn",
+   "items": [
+    {
+     "key": "rainOn",
+     "type": "bool",
+     "label": "Data rain"
+    },
+    {
+     "key": "rainAmount",
+     "type": "num",
+     "label": "Amount",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "rainSpeed",
+     "type": "num",
+     "label": "Speed",
+     "min": 0,
+     "max": 100,
+     "step": 1
+    },
+    {
+     "key": "rainColor",
+     "type": "color",
+     "label": "Rain colour"
+    }
+   ]
+  }
+ ],
+ "fog": {
+  "day": "background",
+  "night": "background"
+ }
+}

@@ -1,0 +1,25 @@
+Subtiers gamemode icons
+=======================
+
+Files: assets/aurora/textures/subtiers/*.png
+
+Taken from the Tiers mod by PvPTiers (https://github.com/PvPTiers/Tiers),
+specifically src/main/resources/resourcepacks/tiers-resources/assets/minecraft/
+textures/font/gamemodes/subtiers/.
+
+That project is licensed under the GNU General Public License, version 3.
+A copy is at https://www.gnu.org/licenses/gpl-3.0.txt and in the upstream
+repository as LICENSE.
+
+NOTE ON LICENSING
+-----------------
+
+The rest of Aurora is MIT. The GPL is a strong copyleft licence, so
+distributing these files as part of this jar makes the distributed work
+subject to GPL-3 terms, not MIT's. That is a licensing consequence rather
+than a technical one, and it was accepted deliberately.
+
+If that is not wanted, the options are to obtain permission from the upstream
+authors under a compatible licence, to ship the icons as a separate resource
+pack the way the Tiers mod itself distributes them, or to replace them with
+original artwork.
